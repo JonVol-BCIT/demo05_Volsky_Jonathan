@@ -1,33 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeakPath</title>
+  </head>
+  <body>
 
-<head>
-    <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PeakPath</a>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Other libraries go here -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favourites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</head>
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to PeakPath!</h1>
+        <p class="col-md-8 fs-4">
+          Lace up your boots. Your next trail is waiting, so pick a path and get moving.
+        </p>
+        <button class="btn btn-warning btn-lg" type="button">
+          Login / Signup
+        </button>
+      </div>
+    </div>
 
-<body>
 
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
-    <!-- Stuff for body goes here -->
+    <div class="container mb-5">
+      <h2 class="mb-3">Trails Near You</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Quarry Rock</h5>
+              <p class="card-text">
+                A 3.8 km round trip in Deep Cove with a famous view over Indian Arm.
+              </p>
+              <a href="#" class="btn btn-outline-dark">View trail</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Cypress Falls</h5>
+              <p class="card-text">
+                A shaded forest trail in West Vancouver that leads to a two-tier waterfall.
+              </p>
+              <a href="#" class="btn btn-outline-dark">View trail</a>
+            </div>
+          </div>
+        </div>
 
-    <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
-    <!---------------------------------------------->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Buntzen Lake Loop</h5>
+              <p class="card-text">
+                A gentle 10 km lakeside loop, perfect for a laid-back day.
+              </p>
+              <a href="#" class="btn btn-outline-dark">View trail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <!-- Bootstrap JS is loaded through main.js -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
